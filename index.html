@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="topbar" id="top">
+    <div class="topbar_inner">
+      <div class="currency" data-dropdown>
+        <button class="currency_btn" type="button" aria-haspopup="listbox" aria-expanded="false" data-dropdown-button>
+
+          <span class="currency_value"></span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+
+        <ul class="currency_menu" role="listbox" aria-label="Currency" data-dropdown-menu>
+
+          <li role="option" tabindex="0" data-currency="TH - THB">TH - THB</li>
+          <li role="option" tabindex="0" data-currency="US - USD">US - USD</li>
+        </ul>
+      </div>
+      <button class="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span class="menuIcon" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav_link" href="#">WOMEN</a>
+        <a class="nav_link" href="#">COLLECTIONS</a>
+        <div class="nav_item has-dropdown">
+          <span class="nav_link nav_link--dropdown" type="button" aria-expanded="false" data-submenu-toggle>
+            EDITORIAL
+          </span>
+
+          <div class="nav_dropdown">
+            <a class="nav_dd_link" href="#">A.S.C</a>
+            <a class="nav_dd_link" href="#">BAZAAR</a>
+            <a class="nav_dd_link" href="#">ELLE</a>
+            <a class="nav_dd_link" href="#">GQ</a>
+          </div>
+        </div>
+        <a class="nav_link" href="#">NEWS</a>
+        <a class="nav_link" href="#">STORIES</a>
+      </nav>
+
+      <div class="topbar_right">
+        <a class="topbar_signin" href="#">SIGN IN</a>
+        <button class="bag" type="button" aria-label="Shopping bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 8h12l-1 13H7L6 8Z" />
+            <path d="M9 8a3 3 0 0 1 6 0" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-label="Hero" id="women">
+      <div class="hero_media">
+        <video autoplay muted loop playsinline poster="asset/images/hero.png">
+          <source src="asset/video/mockup_video576.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h1 class="brand" aria-hidden="true">PLAIMANAS</h1>
+    </section>
+
+    <section class="newDrop" id="new">
+      <div class="newDrop_inner">
+        <a class="newDrop_card" href="#">
+          <img class="newDrop_img" src="asset/images/sct1.jpg" alt="New item">
+          <div class="newDrop_overlay" aria-hidden="true">
+            <div class="newDrop_tag">NEW</div>
+          </div>
+        </a>
+
+        <h3 class="newDrop_title">Sed egestas, nibh a condimentum imperdiet</h3>
+        <p class="sub_text_all">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit
+          ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+        </p>
+      </div>
+    </section>
+
+    <section class="bestsellerSticky" id="editorial">
+      <div class="bestsellerSticky_wrap">
+        <div class="bestsellerSticky_stage">
+          <div class="bestsellerSticky_media">
+            <img class="bestsellerSticky_img" src="asset/images/red_banner.png" alt="">
+            <video class="bestsellerSticky_video is-active" autoplay muted loop playsinline>
+              <source src="asset/video/DTS_THE_LEADER_Joey_Bania_Clips_ID10.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="bestsellerSticky_sticky">
+            <div class="bestsellerSticky_title">BESTSELLER</div>
+          </div>
+        </div>
+
+        <div class="bestsellerSticky_body">
+          <h3 class="newDrop_title">Sed egestas, nibh a condimentum imperdiet</h3>
+          <p class="sub_text_all">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit
+            ultricies justo, vitae molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="collections_banner">
+        <img class="collections_bannerMedia is-image" src="asset/images/sct4.jpg" alt="" aria-hidden="true" />
+
+        <video class="collections_bannerMedia is-video" muted loop playsinline preload="metadata">
+          <source src="asset/video/DTS_THE_LEADER_Joey_Bania_Clips_ID11.mp4" type="video/mp4">
+        </video>
+
+        <div class="collections_bannerText">COLLECTION 01</div>
+      </div>
+
+      <div class="collections_grid">
+        <a class="collectionCard">
+          <img src="asset/images/sct3.jpg" data-hover="asset/images/sct5.jpg" alt="Collection 02" />
+          <span class="collectionCard_label">COLLECTION 02</span>
+        </a>
+
+        <a class="collectionCard">
+          <img src="asset/images/sct2.jpg" data-hover="asset/images/sct5.jpg" alt="Collection 03" />
+          <span class="collectionCard_label">COLLECTION 03</span>
+        </a>
+      </div>
+    </section>
+    <section class="info" id="news">
+      <div class="info_marquee" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee_track">
+            <div class="marquee_group">
+              <span>BEST SELLING</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow right" alt="" aria-hidden="true">
+
+              <span>NEW ARRIVAL</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow left" alt="" aria-hidden="true">
+
+              <span>BEST SELLING</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow right" alt="" aria-hidden="true">
+
+              <span>NEW ARRIVAL</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow left" alt="" aria-hidden="true">
+            </div>
+
+            <div class="marquee_group" aria-hidden="true">
+              <span>BEST SELLING</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow right" alt="" aria-hidden="true">
+
+              <span>NEW ARRIVAL</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow left" alt="" aria-hidden="true">
+
+              <span>BEST SELLING</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow right" alt="" aria-hidden="true">
+
+              <span>NEW ARRIVAL</span>
+              <img src="asset/images/arrow-right-l.png" class="marquee_arrow left" alt="" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_grid">
+        <article class="infoCard">
+          <h3>WORLDWIDE SHIPPING</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit
+            ultricies justo, vitae molestie quam justo ut lacus. Proin vitae.</p>
+        </article>
+        <article class="infoCard">
+          <h3>CUSTOMER SERVICE</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit
+            ultricies justo, vitae molestie quam justo ut lacus. Proin vitae.</p>
+        </article>
+        <article class="infoCard">
+          <h3>SECURE PAYMENT</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit
+            ultricies justo, vitae molestie quam justo ut lacus. Proin vitae.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq" id="stories">
+      <div class="faq_inner">
+        <h2 class="faq_title">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="faq_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus
+          commodo.</p>
+
+        <div class="faq_tabs" role="tablist" aria-label="FAQ categories">
+          <button class="pill" type="button" role="tab" aria-selected="false" data-faq-filter="orders">ORDERS</button>
+          <button class="pill is-active" type="button" role="tab" aria-selected="true"
+            data-faq-filter="shipping">SHIPPING</button>
+          <button class="pill" type="button" role="tab" aria-selected="false" data-faq-filter="returns">RETURNS &amp;
+            EXCHANGES</button>
+          <button class="pill" type="button" role="tab" aria-selected="false" data-faq-filter="sizing">SIZING &amp;
+            PRODUCTS</button>
+        </div>
+        <div class="accordion" data-accordion></div>
+      </div>
+    </section>
+
+    <section class="inquiry" aria-label="Inquiry" id="inquiry">
+      <div class="inquiry_inner">
+        <div class="inquiry_copy">
+          <h2>MAKE AN<br />INQUIRY</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
+        </div>
+
+        <form class="form" autocomplete="on">
+          <div class="form_radios" role="radiogroup" aria-label="Inquiry type">
+            <label class="radio"><input type="radio" name="mode" checked /> <span>Onsite</span></label>
+            <label class="radio"><input type="radio" name="mode" /> <span>Hybrid</span></label>
+          </div>
+
+          <div class="form_row">
+            <label class="field float">
+              <input type="text" placeholder=" " required />
+              <span>Full name*</span>
+            </label>
+
+            <label class="field float">
+              <input type="email" value="Plaimanas@gmail.com" placeholder=" " required />
+              <span>Email*</span>
+            </label>
+          </div>
+
+          <div class="form_row">
+            <label class="field float">
+              <input type="tel" placeholder=" " required />
+              <span>Phone Number*</span>
+            </label>
+            <label class="field float">
+              <div class="cselect" data-cselect>
+                <button class="cselect_btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="cselect_value" data-cselect-value aria-hidden="true"></span>
+                  <span class="cselect_caret" aria-hidden="true"></span>
+                </button>
+
+                <ul class="cselect_menu" role="listbox">
+                  <li class="cselect_opt" role="option" tabindex="0" data-value="General inquiry">General inquiry</li>
+                  <li class="cselect_opt" role="option" tabindex="0" data-value="Job Application">Job Application</li>
+                  <li class="cselect_opt" role="option" tabindex="0" data-value="Media & Press">Media & Press</li>
+                </ul>
+
+                <input type="hidden" name="subject" required />
+              </div>
+
+              <span>Select Subject*</span>
+            </label>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" required />
+            <span>I agree to all terms &amp; conditions</span>
+          </label>
+
+          <button class="btn" type="submit">SEND</button>
+        </form>
+      </div>
+
+      <a class="homeLink" href="#top">HOMEPAGE</a>
+
+      <footer class="footer">
+        <div class="footer_cols">
+          <div class="footerCol">
+            <h4>ABOUT</h4>
+            <a href="#women">Women</a>
+            <a href="#collections">Collections</a>
+            <a href="#editorial">Editorial</a>
+            <a href="#stories">Stories</a>
+          </div>
+          <div class="footerCol">
+            <h4>HELP</h4>
+            <a href="#">Payment Notification</a>
+            <a href="#">Customer Service</a>
+            <a href="#stories">FAQ</a>
+          </div>
+          <div class="footerCol">
+            <h4>SOCIAL</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+          <div class="footerCol">
+            <h4>LEGAL</h4>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies Policy</a>
+          </div>
+          <div class="footerCol footerCol--newsletter">
+            <h4>NEWSLETTER</h4>
+            <label class="field field--newsletter">
+              <span>Email</span>
+              <input type="email" placeholder="" />
+            </label>
+            <button class="btn btn--ghost" type="button">SUBSCRIBE</button>
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <span>©PLAIMANAS</span>
+          <span>Web by :*</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="script/script.js" defer></script>
+</body>
+
+</html>
